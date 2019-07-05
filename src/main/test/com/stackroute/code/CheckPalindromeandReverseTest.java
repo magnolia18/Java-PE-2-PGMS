@@ -39,9 +39,9 @@ public class CheckPalindromeandReverseTest {
     {
         //Act
 
-        String result = obj.validatePalindromeandReverse("363");
+        String result = obj.checkPalindrome("363");
         //Assert
-        assertEquals("","entered number is a palindrome",result);
+        assertEquals("Entered input is a palindrome",result);
 
     }
     @Test
@@ -49,21 +49,21 @@ public class CheckPalindromeandReverseTest {
     {
         //Act
 
-        String result =obj.validatePalindromeandReverse("8838");
+        String result = obj.checkPalindrome("8038");
         //Assert
-        assertEquals("","entered input is not a palindrome",result);
+        assertEquals("Entered input is not a palindrome",result);
 
 
     }
 
     @Test
-    public void givenNumberShouldReturnNotAPalindromePalindrome()
+    public void givenNumberShouldReturnNotAPalindrome()
     {
         //Act
 
-        String result = obj.validatePalindromeandReverse("madam");
+        String result = obj.checkPalindrome("kaam");
         //Assert
-        assertEquals("","entered input is a palindrome",result);
+        assertEquals("","Entered input is not a palindrome",result);
 
 
     }

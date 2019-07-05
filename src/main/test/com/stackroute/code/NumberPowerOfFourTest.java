@@ -43,6 +43,8 @@ public class NumberPowerOfFourTest {
         assertEquals("",true,result);
 
     }
+
+    @Test
     public void givenNumberIsNotAPowerOfFour()
     {
         //Act
@@ -52,6 +54,8 @@ public class NumberPowerOfFourTest {
         assertEquals("",false,result);
 
     }
+
+    @Test
     public void givenNumberIsNegative()
     {
         //Act

@@ -35,16 +35,24 @@ public class StudentGradeTest {
     }
 
     @Test
-    public void givenNumberShouldReturnPalindrome()
-    {
+    public void checkForGrades() {
         //Act
-        int[] number = new int[]{1,2,3,4};
+        int[] number = new int[]{1, 2, 3, 4};
 
         int result = obj.calculateGrades(number);
         //Assert
         assertEquals("", "", result);
     }
 
+    @Test
+    public void checkForGradesWithNegativeValuesSupplied() {
+        //Act
+        int[] number = new int[]{1, 2, -3, 4};
+
+        int result = obj.calculateGrades(number);
+        //Assert
+        assertNotEquals("", "", result);
+    }
 }
 
 

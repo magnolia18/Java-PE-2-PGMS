@@ -43,6 +43,7 @@ public class EvenNumTestTest {
         assertEquals("",true,result);
 
     }
+    @Test
     public void givenAOddNumberShouldReturnFalse()
     {
         //Act
